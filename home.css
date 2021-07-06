@@ -6,6 +6,7 @@ body {
 }
 .title-text {
     margin-top: 2%;
+   
 }
 h3 {
     margin-top: 2%;
@@ -19,6 +20,7 @@ h3 {
 }
 .ques-text {
     margin-left: 5%;
+    margin-right: 5%;
     text-align: left;
 }
 .box {
@@ -32,6 +34,7 @@ h3 {
     width: 60%;
     height : 70%;
     text-align: center;
+    
 
 }
 ul {
@@ -76,7 +79,8 @@ button:active {
 
 .opt-label  {
     margin-top: 1%;
-    padding: 1em 2em;
+ 
+    padding: 2% 5%;
     width: 90%;
     border-radius: 5px;
     background-color: #bbb8b8;
@@ -97,6 +101,7 @@ button:active {
     border-width: 0;
     border-radius: 5px;
     font-weight: normal;
+    
 }
 .ans-indic{
     height: 3em;
@@ -116,4 +121,37 @@ button:active {
     
     background-color: #bbb8b8;
     display: inline-block;
+}
+
+.result-table{
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+    min-width: 90%;
+    border: 1px solid ;
+    border-color: #bbb8b8;
+    border-collapse: collapse;
+    
+    
+
+}
+td {
+    padding: 1% 2%;
+    border: 1px solid #bbb8b8;
+    width: 50%;
+    min-width: 100%;
+    text-align: left;
+   
+  
+    font-size: large;
+
+}
+.btn-cont {
+    display: flex;
+    margin-top: 2%;
+    margin-bottom: 1%;
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: center;
+   justify-content: space-around;
 }

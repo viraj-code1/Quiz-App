@@ -17,73 +17,64 @@
         <h1 class="title-text">Quiz Time</h1>
         <h2>Instructions</h3>
             <ul>
-                <li>Number of questions : 5</li>
+                <li>Number of questions : <span class ="total-question"></span> </li>
                 <li>Duration : 10 mins</li>
                 <li>Max Marks : 5</li>
 
             </ul>
-            <a href="ques1.html"><button> Start Quiz </button> </a>
+            <button onclick="startQuiz()"> Start Quiz </button> </a>
     </div>
-    <div class="quiz box">
-        <h2 class="ques-head"> Question 1 of 5</h2>
+    
+    <div class="quiz box hide">
+        <div class="question-number"></div>
         <hr>
-        <h2 class="ques-text">Which month comes right before june</h2>
-        <div class="opt-grp">
+        <div class="question-text"></div>
 
-       
-            <label class="opt-label"><input type="checkbox" name="opt1" class="opt-cb">July</label>
-            <label class="opt-label"><input type="checkbox" name="opt2" class="opt-cb">June</label>
-            <label class="opt-label"><input type="checkbox" name="opt3" class="opt-cb">April</label>
-            <label class="opt-label"><input type="checkbox" name="opt4" class="opt-cb">May</label>
+        <div class="option-container">
+
+            
+        </div>
+        <button class="next-btn" onclick="next()">Next</button>
+        <hr>
+        <div class="answers-indicator">
 
         </div>
-        <button class="next-btn">Next</button>
-        <hr>
-        <div class="ans-indic">
-            <div class="ans-icon"></div>
-            <div class="ans-icon"></div>
-            <div class="ans-icon"></div>
-            <div class="ans-icon"></div>
-            <div class="ans-icon"></div>
-        </div>
     </div>
-
-    <div class="result box">
+    <div class="result box hide">
         <h1 class="title-text ">Quiz Result</h1>
         <table class="result-table">
             <tr>
                 <td>Total Questions</td>
-                <td> <span class="total-ques">5</span> </td>
+                <td> <span class="total-question"></span> </td>
             </tr>
             <tr>
                 <td>Attempted</td>
-                <td><span class="total-attempt">4</span></td>
+                <td><span class="total-attempt"></span></td>
             </tr>
             <tr>
                 <td>Correct</td>
-                <td><span class="total-correct">3</span></td>
+                <td><span class="total-correct"></span></td>
             </tr>
             <tr>
                 <td>Incorrect</td>
-                <td><span class="total-incorrect">1</span></td>
+                <td><span class="total-wrong"></span></td>
             </tr>
             <tr>
                 <td>Total Score</td>
-                <td><span class="total-score">3 / 5</span></td>
+                <td><span class="total-score"></span></td>
             </tr>
             <tr>
                 <td>Percentage</td>
-                <td><span class="percentage">60%</span></td>
+                <td><span class="percentage"></span></td>
             </tr>
         </table>
         <div class= "btn-cont">
-            <button class="next-btn">Try Again</button> 
-            <button class="next-btn">Go To Home</button>
+            <button class="next-btn" onclick="tryAgainQuiz()">Try Again</button> 
+            <button class="next-btn" onclick ="goHome()">Go To Home</button>
         </div>
         
 
     </div>
-    
 
     <script src="question.js"></script>
     <script src="app.js"></script>
